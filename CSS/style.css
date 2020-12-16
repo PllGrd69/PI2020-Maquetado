@@ -1059,13 +1059,8 @@ p {
 .category{
     background-color: #07294d;
     border-radius: 10px;
-    margin-top: -150px;
-    position: relative;
-    z-index: 5;
 }
 
-.category-text{
-}
 .category-text h2{
     font-size: 36px;
     color: #fff;
@@ -1073,7 +1068,7 @@ p {
 }
 
 .singel-category {
-	padding: 20px 0;
+	padding: 20px 20px;
 	border-radius: 5px;
 	display: block;
 }
