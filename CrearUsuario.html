@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PI-HTML</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div>
+        <header id="header-part">
+
+            <div class="header-top d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header-contact text-lg-left text-center">
+                                <ul>
+                                    <li><i class="fas fa-map-marked-alt"></i><span>Juliaca - En tu corazon</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="header-opening-time text-lg-right text-center">
+                                <p>Proxima clase 5 horas</p>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header top -->
+
+            <div class="header-logo-support pt-30 pb-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="logo">
+                                <a href="HomeAdmin.html">
+                                    <h1>LMS-BookEye</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-8">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a href="HomeAdmin.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="CursosAdmin.html">Cursos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav> <!-- nav -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="page-banner" class="pt-105 pb-110 bg_cover" data-overlay="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-banner-cont">
+                            <h2>Crear Usuarios</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="HomeAdmin.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Crear Usuarios</li>
+
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="courses-part" class="pt-10 pb-120 gray-bg">
+            <section id="corses-singel" class="pt-10 pb-120 gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="corses-singel-left mt-30">
+                                <h2>Crear Usuario</h2>
+                                <hr class="divider my-4" />
+                                <form class="mt-4">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Nombre</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="" placeholder="Nombre "/>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Apellido Paterno</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="" placeholder="Apellido Paterno"/>
+                                        </div>
+                                    </div> <br>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Apellido Materno</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="" placeholder="Apellido Materno"/>
+                                        </div>
+                                    </div> <br>
+                                    <fieldset class="form-group">
+                                        <div class="row">
+                                          <legend class="col-form-label col-sm-2 pt-0">Genero</legend>
+                                          <div class="col-sm-10">
+                                            <div class="row">
+                                              <div class="form-check col-sm-4">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="radio"
+                                                  name="gridRadios"
+                                                  id="gridRadios1"
+                                                  value="M"
+                                                  v-model="persona.Genero"
+                                                />
+                                                <label class="form-check-label" for="gridRadios1">
+                                                  Masculino
+                                                </label>
+                                              </div>
+                                              <div class="form-check col-sm-4">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="radio"
+                                                  name="gridRadios"
+                                                  id="gridRadios2"
+                                                  value="F"
+                                                  v-model="persona.Genero"
+                                                />
+                                                <label class="form-check-label" for="gridRadios2">
+                                                  Femenino
+                                                </label>
+                                              </div>
+                                              <div class="form-check col-sm-4">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="radio"
+                                                  name="gridRadios"
+                                                  id="gridRadios2"
+                                                  value="O"
+                                                  v-model="persona.Genero"
+                                                />
+                                                <label class="form-check-label" for="gridRadios2"> Otro </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">DNI</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="" placeholder="DNI"/>
+                                        </div>
+                                    </div> <br>
+                                    <div class="form-group row">
+                                        <label for="apellidoMaterno" class="col-sm-2 col-form-label"
+                                          >Fecha de Nacimiento</label
+                                        >
+                                        <div class="col-sm-10">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            id="apellidoMaterno"
+                                            placeholder="AAAA-MM-DD"
+                                            v-model="persona.Fecha_nacimiento"
+                                          />
+                                        </div>
+                                      </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="col-sm-6 btn btn-primary">
+                                                Guardar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a5f4090436.js" crossorigin="anonymous"></script>
+    <!--jquery js-->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--Bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Slick js-->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Magnific Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!--Counter Up js-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!--Nice Select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!--Nice Number js -->
+    <script src="js/jquery.nice-number.min.js"></script>
+
+    <!-- Count Down js -->
+    <script src="js/jquery.countdown.min.js"></script>
+
+    <!--Validator js -->
+    <script src="js/validator.min.js"></script>
+
+    <!--Ajax Contact js =-->
+    <script src="js/ajax-contact.js"></script>
+
+    <!--Main js -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
